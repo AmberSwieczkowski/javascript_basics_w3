@@ -1,8 +1,8 @@
 /*
  * https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php
- * Write a JavaScript program to display the current day and time in the following format... 
- * Today is : Tuesday.
- * Current time is : 10:30
+ * Displays the current time, day of the week, and date.
+ * Offers the option to print the page.
+ * 
  */
 
 const today = new Date();
@@ -15,3 +15,7 @@ const today = new Date();
     const minute = today.getMinutes(); // returns 0 - 59
 
   document.write(`It is ${hour}:${minute} on ${daylist[day_of_week]} ${month}-${day}-${year}.`)
+
+function print_current_page() {
+  window.print();
+}
